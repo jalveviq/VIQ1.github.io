@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TESTING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../build/mediaelementplayer.css">
+   
+	
+    <style>
+        html, body {
+            overflow-x: hidden;
+        }
+
+        #container {
+            padding: 0 20px 50px;
+        }
+        .error {
+            color: red;
+        }
+        a {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <section>
+        <h1>MediaElement.js</h1>
+
+        </section>
+
+        <section>
+            <h3>Global Options</h3>
+            <form action="#" method="get">
+                <label>Language <select name="lang">
+                </select>
+                </label>
+                <label>Stretching (Video Only)<select name="stretching">
+                    <option value="auto" selected>Auto (default)</option>
+                    <option value="responsive">Responsive</option>
+                    <option value="fill" selected>Fill</option>
+                    <option value="none" selected>None (original dimensions)</option>
+                </select>
+                </label>
+            </form>
+        </section>
+
+        <br>
+        <div class="players" id="player1-container">
+
+            <h3>Video Player</h3>
+
+            <div class="media-wrapper">
+                <video id="player1" width="640" height="360" style="max-width:100%;"  preload="none" controls playsinline webkit-playsinline>
+                    <source src="http://jeromeviq.streaming.mediaservices.windows.net/83e28df6-e915-4a73-98e6-6bb2330b9e9f/211e7738-5126-4c87-ad94-0f5ad2ec4dba.ism/manifest(format=m3u8-aapl-v3)" type="application/x-mpegURL">
+                </video>
+            </div>
+        </div>
+
+        <br>
+      
+
+       
+    </div>
+	<script src="jquery1.js"></script> 
+    <script src="../build/mediaelement.js"></script>
+    <script src="../build/mediaelement-and-player.js"></script>
+    <script src="../build/renderers/dailymotion.js"></script>
+    <script src="../build/renderers/facebook.js"></script>
+    <script src="../build/renderers/soundcloud.js"></script>
+    <script src="../build/renderers/twitch.js"></script>
+    <script src="../build/renderers/vimeo.js"></script>
+    <script src="../build/lang/cs.js"></script>
+    <script src="../build/lang/de.js"></script>
+    <script src="../build/lang/es.js"></script>
+    <script src="../build/lang/fa.js"></script>
+    <script src="../build/lang/fr.js"></script>
+    <script src="../build/lang/hr.js"></script>
+    <script src="../build/lang/hu.js"></script>
+    <script src="../build/lang/it.js"></script>
+    <script src="../build/lang/ja.js"></script>
+    <script src="../build/lang/ko.js"></script>
+    <script src="../build/lang/nl.js"></script>
+    <script src="../build/lang/pl.js"></script>
+    <script src="../build/lang/pt.js"></script>
+    <script src="../build/lang/ro.js"></script>
+    <script src="../build/lang/ru.js"></script>
+    <script src="../build/lang/sk.js"></script>
+    <script src="../build/lang/sv.js"></script>
+    <script src="../build/lang/uk.js"></script>
+    <script src="../build/lang/zh-cn.js"></script>
+    <script src="../build/lang/zh.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>
